@@ -1,0 +1,57 @@
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Body*/
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+/*Sections*/
+section {
+  margin-bottom: 40px;
+}
+
+/*Hero*/
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #e0f7fa;
+}
+.cta__button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00796b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/*About, Services, Contact*/
+.about,
+.services,
+.contact {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/*Responsive*/
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .cta__button {
+    width: 100%;
+    text-align: center;
+  }
+}
