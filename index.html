@@ -4,28 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clarity Coaching by Momna</title>
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font: Inter -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+
+    <!-- Animate.css CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
-  <body>
+  <body class="bg-gradient-to-br from-blue-50 to-blue-100 text-gray-800">
     <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Simplify Your Systems. Reclaim Your Peace.</h1>
-        <p>
-          Faith-driven clarity coaching for creators who crave impact without
-          overwhelm.
-        </p>
-        <a href="#contact" class="cta-button">Start Your Clarity Journey</a>
-      </div>
+    <section class="text-center py-20 px-6 animate__animated animate__fadeIn">
+      <h1 class="text-4xl font-semibold mb-4">
+        Simplify Your Systems. Reclaim Your Peace.
+      </h1>
+      <p class="text-lg mb-6 max-w-xl mx-auto">
+        Faith-driven clarity coaching for creators who crave impact without
+        overwhelm.
+      </p>
+      <a
+        href="#contact"
+        class="inline-block bg-teal-600 text-white px-6 py-3 rounded hover:bg-teal-700 transition"
+        >Start Your Clarity Journey</a
+      >
     </section>
 
     <!-- About Section -->
-    <section class="about">
-      <h2>About Momna</h2>
+    <section
+      class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md mb-12 animate__animated animate__fadeIn"
+    >
+      <h2 class="text-2xl font-semibold mb-4">About Momna</h2>
       <p>
         I help overwhelmed, faith-rooted creators simplify their workflows and
         build systems that support peace, purpose, and impact. My approach
@@ -35,49 +56,117 @@
     </section>
 
     <!-- Services Section -->
-    <section class="services">
-      <h2>Services</h2>
-      <ul>
-        <li>
-          <h3>Notion Dashboards</h3>
+    <section
+      class="max-w-5xl mx-auto bg-white p-8 rounded-lg shadow-md mb-12 animate__animated animate__fadeIn"
+    >
+      <h2 class="text-2xl font-semibold mb-6 text-center">Services</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
+        <div class="bg-blue-50 p-6 rounded-lg shadow-sm text-center">
+          <svg
+            class="mx-auto mb-4 h-8 w-8 text-teal-600"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 17v-2a4 4 0 00-4-4H5m14 0h-1a4 4 0 00-4 4v2m-4 0h4"
+            />
+          </svg>
+          <h3 class="font-semibold text-lg mb-2">Notion Dashboards</h3>
           <p>Custom clarity systems for creators, coaches, and small teams.</p>
-        </li>
-        <li>
-          <h3>Canva Brand Kits</h3>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-lg shadow-sm text-center">
+          <svg
+            class="mx-auto mb-4 h-8 w-8 text-teal-600"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 7h18M3 12h18M3 17h18"
+            />
+          </svg>
+          <h3 class="font-semibold text-lg mb-2">Canva Brand Kits</h3>
           <p>Minimalist visuals that reflect your message and mission.</p>
-        </li>
-        <li>
-          <h3>SOP Writing</h3>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-lg shadow-sm text-center">
+          <svg
+            class="mx-auto mb-4 h-8 w-8 text-teal-600"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M8 16h8M8 12h8m-8-4h8"
+            />
+          </svg>
+          <h3 class="font-semibold text-lg mb-2">SOP Writing</h3>
           <p>
             Streamlined workflows and repeatable processes for peace of mind.
           </p>
-        </li>
-        <li>
-          <h3>Basic Websites</h3>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-lg shadow-sm text-center">
+          <svg
+            class="mx-auto mb-4 h-8 w-8 text-teal-600"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 10h16M4 14h16M4 18h16"
+            />
+          </svg>
+          <h3 class="font-semibold text-lg mb-2">Basic Websites</h3>
           <p>Clean, responsive pages built with clarity—not code overload.</p>
-        </li>
-      </ul>
+        </div>
+      </div>
     </section>
 
     <!-- Testimonial Section -->
-    <section class="testimonial">
-      <blockquote>
+    <section
+      class="max-w-3xl mx-auto bg-teal-50 p-8 rounded-lg shadow-md mb-12 text-center animate__animated animate__fadeIn"
+    >
+      <blockquote class="italic text-lg mb-4">
         “Momna’s systems helped me simplify my work and reconnect with my
         purpose.”
       </blockquote>
-      <p>— A grateful creator</p>
+      <p class="text-sm text-gray-600">— A grateful creator</p>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <h2>Contact</h2>
-      <p>Email: momna@example.com</p>
+    <section
+      id="contact"
+      class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md mb-12 animate__animated animate__fadeIn"
+    >
+      <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+      <p class="mb-2">
+        Email:
+        <a href="mailto:momna@example.com" class="text-teal-600 underline"
+          >momna@example.com</a
+        >
+      </p>
       <p>Let’s build clarity together.</p>
     </section>
 
     <!-- Footer -->
-    <footer>
-      <p>© 2025 Momna Ijaz — Built with clarity and faith</p>
+    <footer class="text-center text-sm text-gray-600 py-6">
+      © 2025 Momna Ijaz — Built with clarity and faith
     </footer>
   </body>
 </html>
